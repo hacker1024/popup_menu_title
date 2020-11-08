@@ -9,7 +9,7 @@ class PopupMenuTitle extends PopupMenuEntry<void> {
 
   final String title;
   final TextOverflow overflow;
-  final TextStyle textStyle;
+  final TextStyle? textStyle;
 
   /// Creates the menu entry widget.
   ///
@@ -18,7 +18,7 @@ class PopupMenuTitle extends PopupMenuEntry<void> {
   /// Specify a custom [TextStyle] with [textStyle]. The [defaultFontWeight] and
   /// primary theme color will be used by default.
   const PopupMenuTitle({
-    @required this.title,
+    required this.title,
     this.overflow = TextOverflow.ellipsis,
     this.textStyle,
   });
@@ -63,7 +63,7 @@ class _PopupMenuTitleState extends State<PopupMenuTitle> {
         softWrap: false,
         style: widget.textStyle ??
             TextStyle(
-              color: Theme.of(context).primaryColor,
+              color: Theme.of(context)!.primaryColor,
               fontWeight: PopupMenuTitle.defaultFontWeight,
             ),
       ),

@@ -4,7 +4,7 @@ import 'package:popup_menu_title/popup_menu_title.dart';
 void main() => runApp(const App());
 
 class App extends StatelessWidget {
-  const App({Key key}) : super(key: key);
+  const App({Key? key}) : super(key: key);
 
   Widget _buildMenuButton() {
     return PopupMenuButton(
@@ -18,7 +18,7 @@ class App extends StatelessWidget {
           // here as an example of how to do so.
           textStyle: TextStyle(
             fontWeight: FontWeight.w600,
-            color: Theme.of(context).primaryColor,
+            color: Theme.of(context)!.primaryColor,
           ),
         ),
         PopupMenuItem<void>(child: const Text('Item 1')),
