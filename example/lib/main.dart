@@ -21,9 +21,9 @@ class App extends StatelessWidget {
             color: Theme.of(context)!.primaryColor,
           ),
         ),
-        PopupMenuItem<void>(child: const Text('Item 1')),
-        PopupMenuItem<void>(child: const Text('Item 2')),
-        PopupMenuItem<void>(child: const Text('Item 3')),
+        PopupMenuItem<Never>(child: const Text('Item 1')),
+        PopupMenuItem<Never>(child: const Text('Item 2')),
+        PopupMenuItem<Never>(child: const Text('Item 3')),
       ],
     );
   }

@@ -3,7 +3,7 @@ library popup_menu_title;
 import 'package:flutter/material.dart';
 
 /// A title widget to use in a popup menu.
-class PopupMenuTitle extends PopupMenuEntry<void> {
+class PopupMenuTitle extends PopupMenuEntry<Never> {
   static const defaultFontWeight = FontWeight.w600;
   static const defaultPadding = 16.0;
 
