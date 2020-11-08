@@ -1,6 +1,8 @@
 # popup_menu_title
 A Flutter package to provide a popup menu title.
 
+<img src="https://i.postimg.cc/tpZ0KNg5/Screenshot-20201108-175109.png" height="300"/>
+
 ## Usage
 ```dart
 import 'package:popup_menu_title/popup_menu_title.dart';
