@@ -1,0 +1,13 @@
+name: popup_menu_title
+description: A PopupMenuEntry implementation to show a title.
+version: 1.0.0
+author: hacker1024
+#homepage:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
