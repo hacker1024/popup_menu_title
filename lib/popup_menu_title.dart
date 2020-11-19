@@ -49,11 +49,6 @@ class PopupMenuTitle extends PopupMenuEntry<Never> {
 class _PopupMenuTitleState extends State<PopupMenuTitle> {
   @override
   Widget build(BuildContext context) {
-    assert(
-      Theme.of(context) != null,
-      'Cannot find theme! Specify a custom TextStyle.',
-    );
-
     return Padding(
       padding: const EdgeInsets.all(PopupMenuTitle.defaultPadding),
       child: Text(
@@ -63,7 +58,7 @@ class _PopupMenuTitleState extends State<PopupMenuTitle> {
         softWrap: false,
         style: widget.textStyle ??
             TextStyle(
-              color: Theme.of(context)!.primaryColor,
+              color: Theme.of(context).primaryColor,
               fontWeight: PopupMenuTitle.defaultFontWeight,
             ),
       ),

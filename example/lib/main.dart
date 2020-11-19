@@ -18,7 +18,7 @@ class App extends StatelessWidget {
           // here as an example of how to do so.
           textStyle: TextStyle(
             fontWeight: FontWeight.w600,
-            color: Theme.of(context)!.primaryColor,
+            color: Theme.of(context).primaryColor,
           ),
         ),
         PopupMenuItem<Never>(child: const Text('Item 1')),
