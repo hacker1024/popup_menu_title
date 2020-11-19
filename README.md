@@ -16,7 +16,7 @@ final menuItemList = [
     textStyle: TextStyle(
       fontWeight: FontWeight.w600,
       color: Theme
-          .of(context)!
+          .of(context)
           .primaryColor,
     ),
   ),
